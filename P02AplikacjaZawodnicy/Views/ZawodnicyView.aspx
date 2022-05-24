@@ -27,6 +27,11 @@
 </head>
 
 <body class="">
+
+
+
+
+
   <div class="wrapper ">
     <div class="sidebar" data-color="orange">
       <!--
@@ -168,6 +173,13 @@
                 <h4 class="card-title"> Simple Table</h4>
               </div>
              
+                <div id="paginacja">
+                    <input id="btnLewo" type="button" value="<--" />
+                    <input id="txtStrona" type="text" value="1" />
+                    <input id="btnPrawo" type="button" value="-->" />
+                    <input id="txtLiczbaStron" type="hidden" />
+                </div>
+
               <div id="zawartosc">
                 <img src="../images/loading.gif" />
               </div>  
@@ -227,6 +239,7 @@
   <script src="../assets/demo/demo.js"></script>
   <!-- Custom JavaScripts -->
   <script src="../JavaScripts/ZawodnicyJS.js"></script>
+  <script src="../JavaScripts/pagination.js"></script>
 </body>
 
 </html>

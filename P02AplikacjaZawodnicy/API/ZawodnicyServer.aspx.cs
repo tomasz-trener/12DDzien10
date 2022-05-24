@@ -17,10 +17,22 @@ namespace P02AplikacjaZawodnicy.API
         {
             // teraz pobieramy zawodnikw z bazy danych 
 
-            Thread.Sleep(3000);
+           // Thread.Sleep(3000);
+
+            string strona= Request["strona"];
+            string ile = Request["ile"];
+
+            int stronaInt = 1;
+            int ileInt =5;
+
+            if (strona != null)
+                stronaInt = Convert.ToInt32(strona);
+
+            if (ile != null)
+                ileInt = Convert.ToInt32(ile);
 
             ZawodnicyRepository zr = new ZawodnicyRepository();
-            Zawodnicy = zr.PodajWszytkichZawodnikow();
+            Zawodnicy = zr.PodajWszytkichZawodnikow(stronaInt,ileInt);
             
 
 

@@ -24,6 +24,8 @@
 
    <!-- custom styles -->
    <link href="../Styles/ZawodnicyStyle.css" rel="stylesheet" />
+ 
+     
 </head>
 
 <body class="">
@@ -120,7 +122,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <form>
               <div class="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search...">
+                <input value="" class="form-control" placeholder="Search...">
                 <div class="input-group-append">
                   <div class="input-group-text">
                     <i class="now-ui-icons ui-1_zoom-bold"></i>
@@ -173,18 +175,27 @@
                 <h4 class="card-title"> Simple Table</h4>
               </div>
              
-                <div id="paginacja">
+               <%-- <div id="paginacja">
                     <input id="btnLewo" type="button" value="<--" />
                     <input id="txtStrona" type="text" value="1" />
                     <input id="btnPrawo" type="button" value="-->" />
                     <input id="txtLiczbaStron" type="hidden" />
+                </div>--%>
+
+                <div class="pagination">
+               <%--   <a href="#">&laquo;</a>
+                  <a href="#">&raquo;</a>--%>
                 </div>
+
 
               <div id="zawartosc">
                 <img src="../images/loading.gif" />
               </div>  
 
             </div>
+
+              <div id="poleSzczegolyZawodnika"></div>
+
           </div>
          
         </div>
@@ -239,7 +250,7 @@
   <script src="../assets/demo/demo.js"></script>
   <!-- Custom JavaScripts -->
   <script src="../JavaScripts/ZawodnicyJS.js"></script>
-  <script src="../JavaScripts/pagination.js"></script>
+
 </body>
 
 </html>

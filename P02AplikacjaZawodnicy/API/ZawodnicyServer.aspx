@@ -24,13 +24,14 @@
                             foreach (var z in Zawodnicy)
                             {
                          %>
-                            <tr>
-                                <td><%= z.imie + " " + z.nazwisko %></td>
+                        
+                            <tr class="zawodnicyLink" data-id="<%=z.id_zawodnika %>"  id="zaw<%=z.id_zawodnika %>" >
+                                <td>  <%= z.imie + " " + z.nazwisko %></td> 
                                 <td><%= z.kraj %></td>
                                 <td><%= z.wzrost %></td>
                                 <td><%= z.data_ur?.ToString("dd-MM-yyyy") %></td>
                             </tr>
-
+                       
 
                          <% }
                             %>

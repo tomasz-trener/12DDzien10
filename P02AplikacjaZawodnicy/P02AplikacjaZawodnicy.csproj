@@ -68,7 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="API\EdycjaZawodnika.aspx" />
     <Content Include="API\LiczbaStronServer.aspx" />
+    <Content Include="API\SzczegolyZawodnikaServer.aspx" />
+    <Content Include="API\UsuwanieZawodnika.aspx" />
     <Content Include="API\ZawodnicyServer.aspx" />
     <Content Include="assets\css\bootstrap.min.css" />
     <Content Include="assets\css\now-ui-dashboard.css" />
@@ -92,19 +95,40 @@
     <Content Include="assets\js\plugins\chartjs.min.js" />
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="images\loading.gif" />
-    <Content Include="JavaScripts\pagination.js" />
+    <Content Include="JavaScripts\SzczegolyZawodnikaJS.js" />
     <Content Include="JavaScripts\ZawodnicyJS.js" />
     <Content Include="Styles\ZawodnicyStyle.css" />
     <Content Include="Views\ZawodnicyView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\EdycjaZawodnika.aspx.cs">
+      <DependentUpon>EdycjaZawodnika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="API\EdycjaZawodnika.aspx.designer.cs">
+      <DependentUpon>EdycjaZawodnika.aspx</DependentUpon>
+    </Compile>
     <Compile Include="API\LiczbaStronServer.aspx.cs">
       <DependentUpon>LiczbaStronServer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="API\LiczbaStronServer.aspx.designer.cs">
       <DependentUpon>LiczbaStronServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\SzczegolyZawodnikaServer.aspx.cs">
+      <DependentUpon>SzczegolyZawodnikaServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="API\SzczegolyZawodnikaServer.aspx.designer.cs">
+      <DependentUpon>SzczegolyZawodnikaServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="API\UsuwanieZawodnika.aspx.cs">
+      <DependentUpon>UsuwanieZawodnika.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="API\UsuwanieZawodnika.aspx.designer.cs">
+      <DependentUpon>UsuwanieZawodnika.aspx</DependentUpon>
     </Compile>
     <Compile Include="API\ZawodnicyServer.aspx.cs">
       <DependentUpon>ZawodnicyServer.aspx</DependentUpon>

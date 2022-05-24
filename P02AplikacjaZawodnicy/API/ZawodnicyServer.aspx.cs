@@ -21,6 +21,7 @@ namespace P02AplikacjaZawodnicy.API
 
             string strona= Request["strona"];
             string ile = Request["ile"];
+            string filtr = Request["filtr"];
 
             int stronaInt = 1;
             int ileInt =5;
@@ -32,7 +33,7 @@ namespace P02AplikacjaZawodnicy.API
                 ileInt = Convert.ToInt32(ile);
 
             ZawodnicyRepository zr = new ZawodnicyRepository();
-            Zawodnicy = zr.PodajWszytkichZawodnikow(stronaInt,ileInt);
+            Zawodnicy = zr.PodajWszytkichZawodnikow(stronaInt,ileInt, filtr);
             
 
 
